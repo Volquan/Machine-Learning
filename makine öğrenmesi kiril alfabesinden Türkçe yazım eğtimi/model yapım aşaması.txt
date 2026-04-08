@@ -191,7 +191,7 @@ print(f"Validation Accuracy: {val_acc:.4f} (%{val_acc*100:.2f})")
 test_words = ["Merhaba", "İstanbul", "Nasılsın", "Teşekkürler", "Türkiye", "Ankara", "Selam"]
 
 def turkish_to_cyrillic(word):
-    translit = {'a':'а','b':'б','c':'ц','ç':'ч','d':'д','e':'е','f':'ф','g':'г','h':'х','ı':'ы','i':'и','j':'ж','k':'к','l':'л','m':'м','n':'н','o':'о','ö':'ө','p':'п','r':'р','s':'с','ş':'ш','t':'т','u':'у','ü':'ү','v':'в','y':'й','z':'з'}
+    translit = {'a':'а','b':'б','c':'ц','ç':'ч','d':'д','e':'е','f':'ф','g':'г','h':'х','ı':'ы','i':'и','j':'ж','k':'к','l':'л','m':'м','n':'н','o':'о','ö':'ө','p':'п','r':'р','s':'с','ş':'ш','t':'т','u':'у','ü':'ю','v':'в','y':'й','z':'з'}
     return ''.join(translit.get(c.lower(), c) for c in word)
 
 print("\nTürkçe Kelime → Kiril Test Sonuçları")
